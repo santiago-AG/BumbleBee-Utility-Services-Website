@@ -1,2 +1,35 @@
+# Secrets / Credentials
 credentials.json
 token.pkl
+*.env
+*.key
+*.pem
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*$py.class
+
+# Virtual environments
+.env
+.venv/
+env/
+venv/
+
+# Logs
+*.log
+
+# Local databases
+*.db
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Node / frontend tooling (if used)
+node_modules/
+dist/
+build/
+
