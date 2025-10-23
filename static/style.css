@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+  
+/* Navigation */
+header {
+  background: #222;
+  padding: 1em 0;
+  text-align: center;
+}
+.logo {
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.inText {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #ffb700;
+}
+
+/* Sections */
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+#home {
+  background-image: url('/static/images/hero_banner.png');
+  background-size: auto 100%;  
+  background-position: center; 
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: flex-start;     
+  justify-content: center;       
+
+  color: white;
+  text-align: center;
+  min-height: 230px;
+}
+
+
+/* Projects */
+.project-card {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    flex: 100%;
+  }
+  
+  .project-card .column {
+    padding: 2px;
+  }
+}
+
+
+/* Booking */
+#calendar {
+  max-width: 700px;
+  margin: 20px auto;
+}
+#timeSlots {
+  margin: 20px;
+}
+#timeSlots button {
+  margin: 5px;
+  padding: 10px 20px;
+  background: #FFBF00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#timeSlots button:hover {
+  background: #e6ac00;
+}
+#bookingForm {
+  margin-top: 20px;
+}
+#bookingForm input, #bookingForm button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+}  

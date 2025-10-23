@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bumblebee Gardening</title>
+  <link rel="icon" type="image/png" href="/static/images/faviW.png">
+  <link rel="stylesheet" href="/static/style.css">
+
+  <!-- FullCalendar -->
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <img src="/static/images/faviconW.png" alt="My Logo" class="logo">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#booking">Booking</a>
+      <a href="#contact">Contact</a>
+
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home"></section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a North Cheshire based landscaping and cleaning business committed to delivering professional, reliable and affordable services. From small domestic projects to large commercial maintenance, we take pride in every job and ensure the highest standards of quality and care.</p>
+    <p>Our mission goes beyond great service. We are passionate about creating opportunities for young, hard working people in our community. By providing hands on experience and training, we help develop the skills and work ethic that prepare them for future success.</p>
+    <p>When you choose us, you are not just hiring a team that gets the job done. You are supporting a local business that values people, craftsmanship and community growth.</p>
+    <img src="/static/images/aboutUs1.jpg" alt="About Us" class="inText">
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    
+    <div class="row">
+        <div class="column">
+          <div class="project-card">
+            <h3>Weeding</h3>
+            <div class="row">
+              <div class="column">
+                <img src="/static/images/weedingBefore.jpg" alt="Before" class="inText" style="width:100%">
+              </div>
+              <div class="column">
+                <img src="/static/images/weedingAfter.jpg" alt="After" class="inText" style="width: 100%;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="project-card">
+            <h3>Path Clearing</h3>
+            <div class="row">
+              <div class="column">
+                <img src="/static/images/Before.jpg" alt="Before" class="inText" style="width:100%">
+              </div>
+              <div class="column">
+                <img src="/static/images/After.jpg" alt="After" class="inText" style="width: 100%;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="row">
+        <div class="column">
+          <div class="project-card">
+            <h3>Hedge Trimming</h3>
+            <div class="row">
+              <div class="column">
+                <img src="/static/images/beforeWindow.jpg" alt="Before" class="inText" style="width:100%">
+              </div>
+              <div class="column">
+                <img src="/static/images/afterWindow.jpg" alt="After" class="inText" style="width: 100%;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="project-card">
+            <h3>Hedge Trimming</h3>
+            <div class="row">
+              <div class="column">
+                <img src="/static/images/hedgeBefore.jpg" alt="Before" class="inText" style="width:100%">
+              </div>
+              <div class="column">
+                <img src="/static/images/hedgeAfter.jpg" alt="After" class="inText" style="width: 100%;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    
+    
+    
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking">
+    <h2>Book a Quote</h2>
+    <div id="calendar"></div>
+    <div id="timeSlots"></div>
+
+    <form id="bookingForm" style="display:none;">
+      <input type="hidden" name="date">
+      <input type="hidden" name="time">
+
+      <label>Name:</label>
+      <input type="text" name="name" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </section>
+
+
+  <!-- Contact section -->
+  <section id="contact" aria-labelledby="contact-heading" style="padding:24px; max-width:720px; margin:0 auto; text-align:center;">
+    <h2 id="contact-heading" style="font-size:1.6rem; margin-bottom:12px;">Contact</h2>
+
+    <div class="row">
+      <div class="column">
+        <p style="margin:0 0 16px; line-height:1.4;">
+          <strong>Phone</strong><br>
+          <a href="tel:+442082641888"
+            style="display:inline-flex; align-items:center; gap:8px; text-decoration:none; color:#0b66c3; justify-content:center;"
+            aria-label="Call Bumblebee Utility Services">
+            <!-- phone icon -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+              <path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.11-.21c1.2.48 2.53.74 3.88.74a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.85 21 3 13.15 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.35.26 2.68.74 3.88a1 1 0 0 1-.21 1.11l-2.2 2.2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            +44 20 8264 1888
+          </a>
+        </p>
+
+        <p style="margin:0 0 16px; line-height:1.4;">
+          <strong>Email</strong><br>
+          <a href="mailto:bumblebeeutilityservices@gmail.com"
+            style="display:inline-flex; align-items:center; gap:8px; text-decoration:none; color:#0b66c3; justify-content:center;"
+            aria-label="Send email to Bumblebee Utility Services">
+            <!-- email icon -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+              <path d="M3 7.5v9A1.5 1.5 0 0 0 4.5 18h15a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 19.5 6h-15A1.5 1.5 0 0 0 3 7.5z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M21 7.5 12 13 3 7.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            bumblebeeutilityservices@gmail.com
+          </a>
+        </p>
+      </div>
+      
+      <div class="column">
+        <p style="margin:0 0 8px; font-weight:600;">Instagrams</p>
+          <ul style="list-style:none; padding:0; margin:0 auto; display:flex; flex-direction:column; align-items:center; gap:10px;">
+            <li>
+              <a href="https://instagram.com/bumblebee_gardening" target="_blank" rel="noopener noreferrer"
+                style="display:inline-flex; align-items:center; gap:8px; text-decoration:none; color:#111; justify-content:center;">
+                <!-- instagram icon -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+                  <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.2"/>
+                  <path d="M16.5 7.5h.01" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                  <path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                @bumblebee_gardening
+              </a>
+            </li>
+
+            <li>
+              <a href="https://instagram.com/cleaning_bumblebee" target="_blank" rel="noopener noreferrer"
+                style="display:inline-flex; align-items:center; gap:8px; text-decoration:none; color:#111; justify-content:center;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+                  <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.2"/>
+                  <path d="M16.5 7.5h.01" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                  <path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                @cleaning_bumblebee
+              </a>
+            </li>
+          </ul>
+      </div>
+    </div>
+
+    
+
+    
+
+    <p style="margin-top:16px; color:#666; font-size:0.95rem;">
+      Prefer not to use Instagram? Email us and we’ll get back to you with a quote or to arrange a visit.
+    </p>
+  </section>
+
+
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
